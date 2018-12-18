@@ -43,7 +43,7 @@ class Car {
     }
     
     private func checkConditionAndMessage(howFarCarCanGo: Double, pathLenght: Double, averageSpeed: Double){
-        if (howFarCarCanGo) > pathLenght {
+        if (howFarCarCanGo) < pathLenght {
             print ("Машина, которая едет со средней скоростью  \(averageSpeed) км/ч при \(currentVolumeOfTunk) л. в баке проедет \(howFarCarCanGo) км. Расход \(self.howManyLitersFor100KM(averageSpeed: averageSpeed)) л. на 100 км.")
         }else{
             print("В баке не достаточно бензина или вы слишком далеко хотите уехать")
